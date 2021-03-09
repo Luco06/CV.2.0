@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -28,16 +30,71 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <!--Pages de chargement ("Luc-Olivier qui s'écrit en néons puis logo de ma tête qui apparait en grand en animation ("scale animé")postion absolute-->
         <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Luc-Olivier</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#about"><img src="images/man.png">A
+                                    propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#réa"> <img src="images/portfolio.png">Réalisations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills"><img src="images/code.png">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#contacts" tabindex="-1"><img
+                                        src="images/message.png">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
             <!--Menu avec icons animés ("A propos, Réalisation, Skills, Contacts")-->
         </header>
 
         <main>
+            <div class="titre">
+                <div class="me">
+                    <img src="images/luc.png" alt="Luc-Olivier">
+                    <div class="text">
+                        <p>Luc-Olivier</p>
+                        <p>Yohan</p>
+                        <p>Développeur web front-end</p>
+                    </div>
+                    <h1>Développeur web à la recherche d'une alternance</h1>
+                    <p>Dynamique, motivé, ambitieux et également challenger, cela me donne l'envie de toujours
+                        m'améliorer
+                        pour ainsi apprendre de nouvelles compétences et pouvoir réaliser mes projets futurs.</p>
+                </div>
+            </div>
             <!--logo de moi, mon nom dans un logo de forme géométrique animé (infinite)-->
             <!--Sur mon logo,"Je suis développeut web a la recherche d'une alternance :)"-->
+            <section>
+                <div class="barreR"></div>
+                <h2 id="about">A propos de moi</h2>
+                <div class="barreL"></div>
+                <article>
+                    <p><a href="cv-luc.pdf">Télécharger mon cv</a></p>
+                    <h3 id="formation">Mon parcour</h3>
 
+                    <h3 id="skills">Skills</h3>
+
+                    <div class="barreR"></div>
+                    <h3 id="réa">Réalisations</h3>
+                    <div class="barreL"></div>
+                </article>
+            </section>
             <!--A propos
             télecharger mon CV (border solid)
             A propos de moi
@@ -45,7 +102,22 @@
             Réalisation (border-radius: 50%)
             -->
 
-            <footer>
+            <footer id="contact">
+                <div class="barreR"></div>
+                <h3>Contact</h3>
+                <div class="barreL"></div>
+
+                <div class="icons">
+                </div>
+                
+                <h4>Envoyez moi un message</h4>
+                <form action="" method="POST">
+                    <input type="text" name="name" placeholder="Nom/Prénom">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="text" name="sujet" placeholder="sujet">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="message"></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
                 <!--Contact( Gmail pro)
                 Résaux sociau-->
             </footer>
@@ -54,6 +126,9 @@
 
     </div>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
