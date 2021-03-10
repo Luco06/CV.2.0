@@ -33,9 +33,8 @@
     <div class="container-fluid">
         <!--Pages de chargement ("Luc-Olivier qui s'écrit en néons puis logo de ma tête qui apparait en grand en animation ("scale animé")postion absolute-->
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Luc-Olivier</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -47,13 +46,13 @@
                                     propos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#réa"> <img src="images/portfolio.png">Réalisations</a>
+                                <a class="nav-link active" href="#réa"> <img src="images/portfolio.png">Réalisations</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#skills"><img src="images/code.png">Skills</a>
+                                <a class="nav-link active" href="#skills"><img src="images/code.png">Skills</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="#contacts" tabindex="-1"><img
+                                <a class="nav-link active" href="#contacts" tabindex="-1"><img
                                         src="images/message.png">Contact</a>
                             </li>
                         </ul>
@@ -64,35 +63,47 @@
         </header>
 
         <main>
-            <div class="titre">
-                <div class="me">
+            <div class="me">
+                <div class="logo">
                     <img src="images/luc.png" alt="Luc-Olivier">
-                    <div class="text">
+                    <div class="texte">
                         <p>Luc-Olivier</p>
                         <p>Yohan</p>
                         <p>Développeur web front-end</p>
                     </div>
-                    <h1>Développeur web à la recherche d'une alternance</h1>
-                    <p>Dynamique, motivé, ambitieux et également challenger, cela me donne l'envie de toujours
-                        m'améliorer
-                        pour ainsi apprendre de nouvelles compétences et pouvoir réaliser mes projets futurs.</p>
                 </div>
+                <h1>Développeur web à la recherche d'une alternance</h1>
             </div>
             <!--logo de moi, mon nom dans un logo de forme géométrique animé (infinite)-->
             <!--Sur mon logo,"Je suis développeut web a la recherche d'une alternance :)"-->
             <section>
-                <div class="barreR"></div>
-                <h2 id="about">A propos de moi</h2>
-                <div class="barreL"></div>
+                <div class="titre">
+                    <div class="barreR"></div>
+                    <h2 id="about">A propos de moi</h2>
+                    <div class="barreL"></div>
+                </div>
                 <article>
                     <p><a href="cv-luc.pdf">Télécharger mon cv</a></p>
-                    <h3 id="formation">Mon parcour</h3>
 
-                    <h3 id="skills">Skills</h3>
 
-                    <div class="barreR"></div>
-                    <h3 id="réa">Réalisations</h3>
-                    <div class="barreL"></div>
+                    <div class="titre">
+                        <div class="barreR"></div>
+                        <h2 id="formation">Mon parcour</h2>
+                        <div class="barreL"></div>
+                    </div>
+
+                    <div class="titre">
+                        <div class="barreR"></div>
+                        <h2 id="skills">Skills</h2>
+                        <div class="barreL"></div>
+                    </div>
+
+
+                    <div class="titre">
+                        <div class="barreR"></div>
+                        <h2 id="réa">Réalisations</h2>
+                        <div class="barreL"></div>
+                    </div>
                 </article>
             </section>
             <!--A propos
@@ -102,22 +113,36 @@
             Réalisation (border-radius: 50%)
             -->
 
-            <footer id="contact">
-                <div class="barreR"></div>
-                <h3>Contact</h3>
-                <div class="barreL"></div>
-
-                <div class="icons">
+            <footer>
+                <div class="titre">
+                    <div class="barreR"></div>
+                    <h2>Contact</h2>
+                    <div class="barreL"></div>
                 </div>
-                
-                <h4>Envoyez moi un message</h4>
-                <form action="" method="POST">
-                    <input type="text" name="name" placeholder="Nom/Prénom">
-                    <input type="email" name="email" placeholder="Email">
-                    <input type="text" name="sujet" placeholder="sujet">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="message"></textarea>
-                    <button type="submit">Envoyer</button>
-                </form>
+
+                <div class="contact">
+                    <div class="formulaire">
+                        <h3>Envoyer moi un message</h3>
+                        <form action="" method="POST">
+                            <div class="ident">
+                                <input type="text" name="name" placeholder="Nom/Prénom">
+                                <input type="email" name="email" placeholder="Email">
+                                <input type="text" name="sujet" placeholder="sujet">
+                            </div>
+                            <div class="msg">
+                                <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit">Envoyer</button>
+                        </form>
+                    </div>
+                    <div class="icons">
+                        <h3>Mes réseaux</h3>
+                        <li><a href="https://github.com/Luco06"><img class="icon" src="images/github.png"></li></a>
+                        <li><a href="https://fr.linkedin.com/in/luc-olivier-yohan-837073159"><img class="icon"
+                                    src="images/linkedin.png"></li></a>
+                    </div>
+                </div>
+                <span>© 2021 by Luc-Olivier YOHAN</span>
                 <!--Contact( Gmail pro)
                 Résaux sociau-->
             </footer>
