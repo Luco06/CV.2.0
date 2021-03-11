@@ -3,18 +3,14 @@ $color_green:#C6C4AC;
 *{
     margin: 0;
     padding: 0;
-    
-   
     body{
-        
         .container-fluid{
+           font-family: 'Open Sans', sans-serif;
             header{
                 background: #E8634E;
                 border: solid 1px black;
                 border-radius: 10px;
                 width: 100%;
-                
-                
                 .navbar-collapse{
                     ul{
                         li{
@@ -58,7 +54,6 @@ $color_green:#C6C4AC;
                                 top: 45%;
                                 left: 50%;
                                 transform: translateX(-50%) translateY(-50%);
-                            
                         }
                     }
                 }
@@ -81,8 +76,6 @@ $color_green:#C6C4AC;
                         width: 500px;
                         font-size: 50px;
                         color: $color_red;
-                      
-                        
                     }
                     .barreR{
                         justify-self: start;
@@ -97,6 +90,54 @@ $color_green:#C6C4AC;
                         width: 400px;
                     }
                 }
+                .about{
+                    text-align: center;
+                    .dev{
+                        justify-content: center;
+                        h3{
+                            color: $color_red;
+                            margin: 20px;
+                        }
+                        p{
+                            width: 80%;
+                            text-align: center;
+                            margin: auto;
+                            padding-top: 10px;
+                        }
+                    }
+                    .hobbie{
+                        max-width: 100%;
+                        margin: 0 auto;
+                        padding: 50px;
+                        h3{
+                            color: $color_red;
+                            margin: 20px;
+                        }
+                        .slider{
+                            justify-content: center;
+                            margin: auto;
+                            align-items: center;
+                            .slide{
+                                margin: auto;
+                                max-width: 100%;
+                                display: none;
+                            }
+                            .active{
+                                display: block;
+                                animation: fade 0.8s;
+                                @keyframes fade {
+                                    from{
+                                        opacity: 0;
+                                    }
+                                    to{
+                                        opacity: 1;
+                                    }
+                                    
+                                }
+                              }
+                        }
+                    }
+                }
                 article{
                     p{
                         margin: auto;
@@ -105,11 +146,10 @@ $color_green:#C6C4AC;
                         width: 350px;
                         justify-content: center;
                         text-align: center;
+                        margin-bottom: 40px;
                         a{
                             color: $color_red;
                             text-decoration: none;
-                           
-                            
                             
                             &:hover{
                                 text-decoration: none;
@@ -118,11 +158,79 @@ $color_green:#C6C4AC;
                                 text-decoration: none;
                                 color: black;
                             }
-                            
+                        }
+                    }
+                    .skills{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .part1{
+                            .pix{
+                                margin: 100px;
+                                float: left;
+                                height: 64px;
+                                width: 64px;
+                                border-radius: 50%;
+                            }
+                        }
+                        .part2{
+                            .pix{
+                                margin: 100px;
+                                float: left;
+                                height: 64px;
+                                width: 64px;
+                                border-radius: 50%; 
+                            }
+                        }
+                        .part3{
+                            .pix{
+                                margin: 100px;
+                                float: left;
+                                height: 64px;
+                                width: 64px;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                    .realisation{
+                        display: flex;
+                        flex-direction:column;
+                        justify-content: center;
+                        align-items: center;
+                        
+                        .part1{
+                            .pix{
+                                margin: 100px;
+                                float: left;
+                                height: 200px;
+                                width: 400px;
+                                
+                            }
+                        }
+                        .part2{
+                            display: flex;
+                            .pix1{
+                                video{
+                                    margin: 100px;
+                                    height: 200px;
+                                    width: 400px;
+                                    
+                                }
+                            }
+                                .pix2{
+                                    video{
+                                        margin: 100px;
+                                        height: 200px;
+                                        width: 400px;
+                                        
+                                    }
+                                }
+                        }
+              
                         }
                     }
                 }
-         
             }
             footer{
                 background-color: $color_red;
@@ -207,9 +315,11 @@ $color_green:#C6C4AC;
                                 }
                             }
                             button{
+                                
                                 display: block;
                                 margin-left: auto;
                                 position: relative;
+                               
                             }
                         
                         h3{
@@ -224,11 +334,9 @@ $color_green:#C6C4AC;
                         width: 100%;
                         text-align: center;
                         color: white;
-                      
                     }
                 }
-
             }
         }
     }
-}
+
