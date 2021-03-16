@@ -1,5 +1,5 @@
 $color_red: #E8634E;
-$color_green:#C6C4AC;
+$color_green:#CAC7B7;
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@ $color_green:#C6C4AC;
         .container-fluid{
            font-family: 'Open Sans', sans-serif;
             header{
-                background: #E8634E;
+                background: $color_red;
                 border: solid 1px black;
                 border-radius: 10px;
                 width: 100%;
@@ -15,52 +15,34 @@ $color_green:#C6C4AC;
                     ul{
                         li{
                             padding-left: 60px;
+                            img{
+                                padding: 20px;
+                            }
                         }
                     }
                 }
             }
             main{
                 height: 100%;
-                background-color:#E4E2D2;
+                width: 100%;
+                background-color:$color_green;
                 padding-top: 100px;
                 .me{
                     justify-content: center;
                     text-align: center;
                     height: 550px;
-                    .logo{
-                        height: 500px;
                         img{
-                            position: absolute;
-                            top: 35%;
-                            left: 50%;
-                            transform: translateX(-50%) translateY(-50%);
-                            @media screen and(max-width:600px) {
-                                position: absolute;
-                                top: 35%;
-                                left: 50%;
-                                transform: translateX(-50%) translateY(-50%);
-                            }
-                        }
-                        .texte{
-                            position: absolute;
-                            z-index: 1;
-                            letter-spacing: 2px;
-                            flex-direction: column;
-                            top: 45%;
-                            left: 50%;
-                            transform: translateX(-50%) translateY(-50%);
-                            @media screen and(max-width:600px) {
-                                position: absolute;
-                                top: 45%;
-                                left: 50%;
-                                transform: translateX(-50%) translateY(-50%);
-                        }
-                    }
+                            height: 500px;
+                            width: 500px;
+                            margin-left: auto;
+                            margin-right: auto;
                 }
-            }h1{
-                font-size: 60px;
+            }
+            h1{
+                padding-top: 20px;
+                font-size: 45px;
                 color: $color_red;
-                margin-top: -100px;
+                text-align: center;
             }
             section{
                 padding-top: 20px;
@@ -74,19 +56,19 @@ $color_green:#C6C4AC;
                         text-align: center;
                         align-self: center;
                         width: 500px;
-                        font-size: 50px;
+                        font-size: 30px;
                         color: $color_red;
                     }
                     .barreR{
                         justify-self: start;
                         align-self: start;
-                        border: solid 2px $color_green;
+                        border: solid 2px $color_red;
                         width: 400px;
                     }
                     .barreL{
                         justify-self: end;
                         align-self:end ;
-                        border: solid 2px $color_green;
+                        border: solid 2px $color_red;
                         width: 400px;
                     }
                 }
@@ -100,7 +82,7 @@ $color_green:#C6C4AC;
                         }
                         p{
                             width: 80%;
-                            text-align: center;
+                            text-align: justify;
                             margin: auto;
                             padding-top: 10px;
                         }
@@ -139,7 +121,7 @@ $color_green:#C6C4AC;
                     }
                 }
                 article{
-                    p{
+                    .download{
                         margin: auto;
                         font-size: 30px;
                         border:solid $color_red 2px;
@@ -198,34 +180,54 @@ $color_green:#C6C4AC;
                         flex-direction:column;
                         justify-content: center;
                         align-items: center;
+                        .lien{
+                            a{
+                                color: $color_red;
+                                text-decoration: none;
+                                &:visited{
+                                    color: black;
+                                }
+                            }
+                        }
                         
                         .part1{
+                            display: flex;
+                            flex-direction: row;
                             .pix{
                                 margin: 100px;
-                                float: left;
                                 height: 200px;
                                 width: 400px;
+                                :nth-child(3){
+                                    margin: auto;
+                                    align-items: center;
+                                    text-align: center;
+                                }
+
                                 
                             }
                         }
                         .part2{
                             display: flex;
-                            .pix1{
+                            width: 100%;
+                            margin: auto;
+                            justify-content: center;
+                            align-items: center;
+                            .video1{
+                                width: 600px;
                                 video{
                                     margin: 100px;
                                     height: 200px;
-                                    width: 400px;
-                                    
+                                    width: 45%;
                                 }
                             }
-                                .pix2{
-                                    video{
-                                        margin: 100px;
-                                        height: 200px;
-                                        width: 400px;
-                                        
-                                    }
+                            .video2{
+                                width: 600px;
+                                video{
+                                    margin: 100px;
+                                    height: 200px;
+                                    width: 45%;
                                 }
+                            }
                         }
               
                         }
@@ -242,34 +244,36 @@ $color_green:#C6C4AC;
                     justify-content: center;
                     align-items: center;
                     padding-top: 10px;
+                    flex-direction: row;
                     h2{
                         text-align: center;
                         align-self: center;
                         width: 500px;
-                        font-size: 50px;
+                        font-size: 30px;
                         color: $color_green;
                     }
                     .barreL{
                         justify-self: end;
                         align-self:end ;
                         border: solid 2px $color_green;
-                        width: 400px;
+                        width: 300px;
                     }
                     .barreR{
                         justify-self: start;
                         align-self: start;
                         border: solid 2px $color_green;
-                        width: 400px;
+                        width: 300px;
                     }
                 }
                 .contact{
-                    width: 50%;
+                    width: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     margin: auto;
                     .icons{
-                        width: 100%;
+                        align-items: center;
+                        justify-content: center;
                         margin: auto;
                         li{
                             align-items: center;
@@ -290,13 +294,16 @@ $color_green:#C6C4AC;
                     }
                     .formulaire{
                        
-                        width: 100%;
+                        width: 39%;
                         justify-self: start;
                         align-self: start;
-                        margin: auto;
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
                             .ident{
                                 float: left;
                                 input{
+                                    border-radius: 5px;
                                     width: 210px;
                                     display: flex;
                                     margin: 2px;
@@ -307,6 +314,7 @@ $color_green:#C6C4AC;
                                 }
                             }
                             textarea{
+                                border-radius: 5px;
                                 width: 50%;
                                 float: right;
                                 max-height: 90px;
@@ -315,10 +323,10 @@ $color_green:#C6C4AC;
                                 }
                             }
                             button{
+                                margin-left:52%;
+                                width:100px;
+                                border-radius: 5px;
                                 
-                                display: block;
-                                margin-left: auto;
-                                position: relative;
                                
                             }
                         

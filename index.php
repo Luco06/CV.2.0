@@ -57,7 +57,7 @@
                                 <a class="nav-link active" href="#skills"><img src="images/code.png">Skills</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#contacts" tabindex="-1"><img
+                                <a class="nav-link active" href="#contact" tabindex="-1"><img
                                         src="images/message.png">Contact</a>
                             </li>
                         </ul>
@@ -68,17 +68,11 @@
         </header>
 
         <main>
-            <div class="me">
-                <div class="logo">
-                    <img src="images/luc.png" alt="Luc-Olivier">
-                    <div class="texte">
-                        <p>Luc-Olivier</p>
-                        <p>Yohan</p>
-                        <p>Développeur web front-end</p>
-                    </div>
-                </div>
-                <h1>Développeur web à la recherche d'une alternance</h1>
+            <div class="me row">
+                    <img src="images/kelu.png" alt="Luc-Olivier">
             </div>
+
+            <h1>Développeur à la recherche d'une alternance</h1>
             <!--logo de moi, mon nom dans un logo de forme géométrique animé (infinite)-->
             <!--Sur mon logo,"Je suis développeut web a la recherche d'une alternance :)"-->
             <section>
@@ -89,17 +83,16 @@
                 </div>
                 <div class="about">
                     <div class="dev">
-                        <h3>I'm developper !</h3>
-                        <p>Issue de l'hotellerie-restauration et de la vente.
-                            Je me suis découvert une nouvelle passion..."Le Code" plus précisément tous ce qui touche
+                        <h3>I'm a developper !</h3>
+                        <p>Issu de l'hôtellerie-restauration et de la vente, je me suis découvert une nouvelle passion..."Le Code" et plus précisément tout ce qui touche
                             au front-end.
-                            La cuisine m'a permis de développer mon côté créatif, l'esprit d'équipe et également la
-                            gestion du stress dû aux moments de rush.
+                            <p>La cuisine m'a permis de développer mon côté créatif, l'esprit d'équipe ainsi que d'apprendre à
+                            gérer le stress dû aux moments de rush.</p>
                         </p>
-                        <p>Elle,la vente, m'a permis de développer mon relationelle. Que des solutions pour nos clients
-                            !</p>
-                        <p>Je pense que ces deux expériences m'ont permis d'améliorer mon apprentissage en tant que
-                            développeur web et d'être concentré et persévérant dans ce que j'entreprend.</p>
+                        <p>La vente m'a quant à elle permis de développer mon relationnel: "Que des solutions pour nos clients
+                            !"</p>
+                        <p>Je pense que ces deux expériences m'ont permis d'améliorer mes conditions d'apprentissage en tant que
+                            développeur web et d'être concentré et persévérant dans tout ce que j'entreprends.</p>
                     </div>
                     <div class="hobbie">
                         <h3>Mes Hobbies</h3>
@@ -154,31 +147,28 @@
                         <h2 id="réa">Réalisations</h2>
                         <div class="barreL"></div>
                     </div>
-                    <div class="realisation">
-                        <p>Certains de mes projets, ont été réaliser dans le cadre de ma formation.</p>
+                    <div class="realisation container">
+                        <p>Certains de mes projets ont été réalisés dans le cadre de ma formation.</p>
                         <p class="lien">Retrouvez-les et plus encore sur mon <a href="https://github.com/Luco06">Github</a></p>
                         <div data-aos="zoom-in">
-                            <div class="part1">
+                            <div class="part1 row">
                                 <img class="pix" src="images/femacom.png" alt="">
                                 <img class="pix" src="images/Bannière-Cartier.png">
                                 <img class="pix" src="images/jo.png" alt="">
+                                <img class="pix" src="images/timberlande.png" alt="">
                             </div>
                         </div>
                         
 
                         <div class="part2">
-                            <div data-aos="zoom-in-right">
-                                <div class="pix1">
-                                    <video controls autoplay muted src="videos/dt1.mp4" alt=""></video>
-                                </div>
+                            
+                            <div class="video1">
+                                <video  controls autoplay muted src="videos/dt1.mp4" alt="" data-aos="zoom-in-right">
                             </div>
 
-                            <div data-aos="zoom-in-left">
-                                <div class="pix2">
-                                    <video controls autoplay muted class="pix2" src="videos/psd.mp4" alt="">
-                                </div>
-                            </div>
-
+                                    <div class="video2">
+                                        <video controls autoplay muted  src="videos/psd.mp4" alt="" data-aos="zoom-in-left">
+                                    </div>
                         </div>
                     </div>
                 </article>
@@ -193,7 +183,7 @@
             <footer>
                 <div class="titre">
                     <div class="barreR"></div>
-                    <h2>Contact</h2>
+                    <h2 id="contact">Contact</h2>
                     <div class="barreL"></div>
                 </div>
 
@@ -208,8 +198,8 @@
                             </div>
                             <div class="msg">
                                 <textarea name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                                <button type="submit">Envoyer</button>
                             </div>
-                            <button type="submit">Envoyer</button>
                         </form>
                     </div>
                     <div class="icons">
@@ -224,8 +214,6 @@
                 Résaux sociau-->
             </footer>
         </main>
-
-
     </div>
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
