@@ -154,6 +154,13 @@ $color_green:#CAC7B7;
                                 height: 64px;
                                 width: 64px;
                                 border-radius: 50%;
+                                @media(max-width:599px) {
+                                    margin:70px 50px 30px 130px;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-align: center;
+                                    
+                                }
                             }
                         }
                         .part2{
@@ -162,7 +169,14 @@ $color_green:#CAC7B7;
                                 float: left;
                                 height: 64px;
                                 width: 64px;
-                                border-radius: 50%; 
+                                border-radius: 50%;
+                                @media(max-width:599px) {
+                                    margin:70px 50px 30px 130px;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-align: center;
+                                    
+                                } 
                             }
                         }
                         .part3{
@@ -172,6 +186,13 @@ $color_green:#CAC7B7;
                                 height: 64px;
                                 width: 64px;
                                 border-radius: 50%;
+                                @media(max-width:599px) {
+                                    margin:70px 50px 30px 130px;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-align: center;
+                                    
+                                } 
                             }
                         }
                     }
@@ -202,6 +223,10 @@ $color_green:#CAC7B7;
                                     align-items: center;
                                     text-align: center;
                                 }
+                                @media(max-width:599px) {
+                                    margin: 10px 0 20px 0;
+
+                                }
 
                                 
                             }
@@ -218,6 +243,10 @@ $color_green:#CAC7B7;
                                     margin: 100px;
                                     height: 200px;
                                     width: 45%;
+                                    @media(max-width:599px) {
+                                        margin-left: 30px;
+    
+                                    }
                                 }
                             }
                             .video2{
@@ -226,6 +255,10 @@ $color_green:#CAC7B7;
                                     margin: 100px;
                                     height: 200px;
                                     width: 45%;
+                                    @media(max-width:599px) {
+                                        margin-left: 30px;
+    
+                                    }
                                 }
                             }
                         }
@@ -266,15 +299,16 @@ $color_green:#CAC7B7;
                     }
                 }
                 .contact{
+                    margin: auto;
                     width: 100%;
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin: auto;
                     .icons{
                         align-items: center;
-                        justify-content: center;
                         margin: auto;
+                        @media(max-width:599px) {
+                           margin: 0;
+                            
+                        } 
                         li{
                             align-items: center;
                             justify-content: center;
@@ -293,7 +327,7 @@ $color_green:#CAC7B7;
                         }
                     }
                     .formulaire{
-                       
+                       height: 100%;
                         width: 39%;
                         justify-self: start;
                         align-self: start;
@@ -321,13 +355,22 @@ $color_green:#CAC7B7;
                                 &::placeholder{
                                     padding-left: 10px;
                                 }
+                                @media(max-width:599px) {
+                                    margin-top: 100px;
+                                    width: 100%;
+                                    justify-content: center;
+                                   
+                                    
+                                } 
                             }
                             button{
                                 margin-left:52%;
                                 width:100px;
                                 border-radius: 5px;
-                                
-                               
+                                @media(max-width:599px) {
+                                  margin-top:0;
+                                    
+                                } 
                             }
                         
                         h3{
@@ -347,4 +390,3 @@ $color_green:#CAC7B7;
             }
         }
     }
-

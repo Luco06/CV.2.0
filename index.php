@@ -150,14 +150,14 @@
                     <div class="realisation container">
                         <p>Certains de mes projets ont été réalisés dans le cadre de ma formation.</p>
                         <p class="lien">Retrouvez-les et plus encore sur mon <a href="https://github.com/Luco06">Github</a></p>
-                        <div data-aos="zoom-in">
+                        
                             <div class="part1 row">
-                                <img class="pix" src="images/femacom.png" alt="">
-                                <img class="pix" src="images/Bannière-Cartier.png">
-                                <img class="pix" src="images/jo.png" alt="">
-                                <img class="pix" src="images/timberlande.png" alt="">
+                                <img data-aos="zoom-in" class="pix" src="images/femacom.png" alt="">
+                                <img data-aos="zoom-in" class="pix" src="images/cartier.png">
+                                <img data-aos="zoom-in" class="pix" src="images/jo.png" alt="">
+                                <img data-aos="zoom-in" class="pix" src="images/timberlande.png" alt="">
                             </div>
-                        </div>
+                        
                         
 
                         <div class="part2">
@@ -189,7 +189,7 @@
 
                 <div class="contact">
                     <div class="formulaire">
-                        <h3>Envoyer moi un message</h3>
+                        <h3>Envoyez-moi un message</h3>
                         <form action="index.php" method="post">
                             <div class="ident">
                                 <input type="text" name="name" placeholder="Nom/Prénom" required>
@@ -198,7 +198,7 @@
                             </div>
                             <div class="msg">
                                 <textarea name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
-                                <button type="submit">Envoyer</button>
+                                <button type="submit">Envoyez</button>
                             </div>
                         </form>
                     </div>
@@ -232,5 +232,14 @@
 
         mail($to, $sujet, $expéditeur,$message);
 ?>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DETXS3PGZP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DETXS3PGZP');
+</script>
 </body> 
 </html>
